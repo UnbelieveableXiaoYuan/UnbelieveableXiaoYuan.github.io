@@ -1,0 +1,61 @@
+// =======================================//
+
+>> VIM MODE
+	1.Nomal
+		1) basic move 
+		-- hjkl : left down up right
+		-- gg   : jump to first line
+		-- G/shift+g  : jump to last line
+		-- ctrl+u : pageup half page
+		-- ctrl+d : pagedown half page
+		-- ctrl+b : pageup full page
+		-- ctrl+f : pagedown full page
+		-- {lineno}gg : jump to lineno line
+		-- zz : set this line to the center of the window
+		-- zt : set this line to the top of the window
+		-- zb : set this line to the bottom of the window
+		
+		2) move base word
+		-- w  : word, jump to the head of the next word
+		-- b  : back, jump to the head of the last word
+		-- e  : end , jump to the end of the next word
+		-- ge :     , jump to the end of the last word
+
+		3) move base search
+		// search in line
+		-- f{char} : jumt to the next "char" word in this line
+		-- t{char} : jumt before to the next "char" word in this line
+		-- ; : repeate the ft search after
+		-- , : repeate the ft search before
+
+		// search in file
+		-- /{pattern} : jump to the next "pattern" in this file
+		-- ?{pattern} : jump to the last "pattern" in this file
+		                pattern can be regular expression 
+
+
+	2.Insert
+		-- i : insert before cursor 
+		-- I : insert before this line 
+		-- a : append after  cursor 
+		-- A : append after  this line 
+		-- o : insert from next line
+		-- O : insert from last line
+		-- s : delete the cursor and then insert 
+		-- S : delete the line and then insert 
+	3.Commend
+		:w  : save this file
+		:w! : force to save the read only file
+		:q  : quit
+		:q! : don't save and quit
+		:wq : save and quit
+		:x  : save and quit
+		:h {command} : show the help of the command, use ':q' to quit the help file
+
+	4.Visual 
+		-- v : eelect cursor
+		-- v + direction move 
+		-- V/shift+v : select line
+		-- x : cut
+		-- y : copy
+		-- p : paste
